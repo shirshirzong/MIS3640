@@ -10,6 +10,9 @@ def quad():
     positive = (-b + disc1) / (2*a)
     negative = (-b - disc1) / (2*a)
 
-    print('the positive value of the quadratic equation is {0}, and then negative value is {1}'.format(positive,negative))
-
+    if disc>0:
+        print('the positive value of the quadratic equation is {0}, and then negative value is {1}'.format(positive,negative))
+    else:
+        print ('No real solutions')
+        
 quad()
