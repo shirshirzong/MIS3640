@@ -76,9 +76,9 @@ all the odd numbers between 1(inclusive) and n (inclusive if n is not even).
 
 
 def sum_cubes_of_odd_numbers(n):
+    result = 0
     
     for i in range(1, n + 1, 2):
-        result = 0
         result = result + i**3
     return result
 
