@@ -109,7 +109,7 @@ def main():
 
     print_most_common(hist, 5)
 
-    words = process_file('session13/Metabolic_Adaption_to_Climate_and_Distribution_of_the_Raccoon.txt', skip_header=False)
+    words = process_file('session13/words.txt', skip_header=False)
 
     diff = subtract(hist, words)
     print(diff)
