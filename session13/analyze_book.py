@@ -48,12 +48,35 @@ def different_words(hist):
     return len(hist)
 
 
-def most_common(hist):
+# def most_common(hist):
+#     """Makes a list of word-freq pairs in descending order of frequency.
+#     hist: map from word to frequency
+#     returns: list of (frequency, word) pairs
+#     """
+#     return sorted([word for word in hist.items()], key=lambda x: x[1], reverse=True)
+
+def most_common(hist, excluding_stopwords=True):
     """Makes a list of word-freq pairs in descending order of frequency.
     hist: map from word to frequency
+    excluding_stopwords: a boolean value. If it is True, do not include any stopwords in the list.
     returns: list of (frequency, word) pairs
     """
-    return sorted([word for word in hist.items()], key=lambda x: x[1], reverse=True)
+    t = []
+
+    stopwords = process_file
+    ('session13/stopwords.txt', False)
+    stopwords = list(stopwords.keys())
+    # print(stopwords)
+
+    for wrod, freq in hist.items():
+        if excluding_stopwords 
+            if word in stopwords:
+                continue
+
+        t.append((value, key))
+
+    t.sort(reverse=True)
+    return t
 
 
 def print_most_common(hist, num=10):

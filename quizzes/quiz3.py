@@ -22,11 +22,11 @@ def get_middle(a, b):
     
 
 # Uncomment the following lines to test
-# a = [1, 2, 3]
-# b = [4, 5, 6, 7]
-# c = [8, 9, 10, 11, 12]
-# print(get_middle(a, b))
-# print(get_middle(a, c))
+a = [1, 2, 3]
+b = [4, 5, 6, 7]
+c = [8, 9, 10, 11, 12]
+print(get_middle(a, b))
+print(get_middle(a, c))
 
 # Expected output:
 # [2, 5, 6]
@@ -39,8 +39,7 @@ def replace_even(data):
     No return is required.
     data: the list of values to process
     '''
-    for i in range(len(data)):
-        if 
+    pass
 
 
 
